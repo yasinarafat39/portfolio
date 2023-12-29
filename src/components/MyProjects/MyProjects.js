@@ -1,10 +1,21 @@
 import React, { useEffect } from 'react';
 
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 
 const MyProjects = () => {
 
+    const navigate = useNavigate();
+
+
+    // const handleNavigateToProjectDetails = (projectId) => {
+
+    //     // Navigate to Project details
+    //     navigate(`/details/${projectId}`);
+    // }
+
+
+    //---------- Data of project -----------------
     const projects = [
         {
             "id": 1,
@@ -82,7 +93,7 @@ const MyProjects = () => {
             ]
         }
     ]
-
+    //--------------------------------------------
 
     return (
         <div id='projects' className='projects mt-24'>
@@ -100,6 +111,7 @@ const MyProjects = () => {
                             <div className="card-actions justify-between">
                                 <a href={project.liveSite} target="_blank" className="btn btn-sm  bg-green-600 border-none">Visit Now</a>
                                 <Link to={`/details/${project.id}`} className="btn btn-sm bg-green-600 border-none">Details</Link>
+                                {/* <button onClick={handleNavigateToProjectDetails(project.id)} className="btn btn-sm bg-green-600 border-none">Details2222</button> */}
                             </div>
                         </div>
                     </div>)

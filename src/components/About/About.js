@@ -88,7 +88,7 @@ const About = () => {
                     <p className='text-xl mt-4'>I'm excited to make the leap and continue refining my skills with the right company. Download my Resume, or Contact with me form below or you can check me out at social Link also.</p>
 
                     <div className="mt-6 flex flex-col space-y-4 sm:items-center sm:justify-center md:justify-start sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
-                        <a href="https://drive.google.com/file/d/1uEY_YBqZTacquyqJcsL6rYkTs8QjgLsR/view?usp=sharing" target="_blank" className=" flex justify-center items-center px-4 lg:px-8 lg:py-3 py-1 text-lg font-semibold rounded bg-green-600 text-gray-50">
+                        <a href="https://drive.google.com/file/d/1n_fMZ6rkLCAShT-Ic2hyL14bOtDWQx3W/view?usp=sharing" target="_blank" className=" flex justify-center items-center px-4 lg:px-8 lg:py-3 py-1 text-lg font-semibold rounded bg-green-600 text-gray-50">
                             <span className='mr-2'><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z" /><path d="M13 12h3l-4 4-4-4h3V8h2v4zm2-8H5v16h14V8h-4V4zM3 2.992C3 2.444 3.447 2 3.999 2H16l5 5v13.993A1 1 0 0 1 20.007 22H3.993A1 1 0 0 1 3 21.008V2.992z" fill="rgba(255,255,255,1)" /></svg></span>
                             Resume</a>
                         <a href="#contact" className=" flex justify-center items-center px-4 lg:px-8 lg:py-3 py-1 text-lg font-semibold border rounded border-gray-800">

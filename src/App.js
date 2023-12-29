@@ -41,10 +41,10 @@ function App() {
 
   ])
 
-  const location = useLocation();
+
   useEffect(() => {
-    ReactGA.pageview(location.pathname + location.search);
-  }, [location]);
+    ReactGA.pageview(window.location.pathname);
+  }, []);
 
   return (
     <div className="max-w-[1440px] mx-auto">
