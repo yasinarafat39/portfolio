@@ -84,10 +84,6 @@ const MyProjects = () => {
     ]
 
 
-
-
-
-
     return (
         <div id='projects' className='projects mt-24'>
             <h2 className='text-center mb-16 font-semibold text-5xl text-green-600'>My Projects</h2>
@@ -108,9 +104,6 @@ const MyProjects = () => {
                         </div>
                     </div>)
                 }
-
-
-
 
             </div>
 

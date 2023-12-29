@@ -64,8 +64,6 @@ const Header = () => {
                 </div>
             </div>
 
-
-
         </section>
     );
 };
