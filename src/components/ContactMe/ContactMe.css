@@ -1,0 +1,13 @@
+.blur_header {
+    position: absolute;
+    width: 22rem;
+    height: 14rem;
+    border-radius: 50%;
+    background: #EDD0FF;
+    filter: blur(212px);
+    z-index: -9;
+    top: -18%;
+    left: 30%;
+    filter: blur(72px);
+}
+
