@@ -1,7 +1,7 @@
 import { createBrowserRouter, RouterProvider, useLocation } from 'react-router-dom';
 import './App.css';
 import ProjectDetails from './components/MyProjects/ProjectDetails';
-
+import ReactGA from "react-ga4";
 
 import Main from './layout/Main';
 import Blogs from './Pages/Blogs/Blogs';
@@ -9,8 +9,9 @@ import Home from './Pages/Home/Home';
 import { useEffect } from 'react';
 
 //------------ Google Analytics --------------
-import ReactGA from 'react-ga';
-ReactGA.initialize('G-E9P2EJESW4');
+
+const TRACKING_ID = "G-E9P2EJESW4";
+ReactGA.initialize(TRACKING_ID);
 //------------- End Google Analytics ---------
 
 
@@ -43,8 +44,14 @@ function App() {
 
 
   useEffect(() => {
-    ReactGA.pageview(window.location.pathname);
+    // Send pageview with a custom path
+    ReactGA.send({
+      hitType: "pageview",
+      page: window.location.pathname + window.location.search,
+      title: "Home page"
+    });
   }, []);
+
 
   return (
     <div className="max-w-[1440px] mx-auto">
